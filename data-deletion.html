@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Data Deletion Instructions — AI Box</title>
+  <meta name="description" content="How to disconnect accounts from AI Box and request deletion of data collected through connected Facebook, Instagram and WhatsApp Business accounts.">
+  <meta name="theme-color" content="#101126">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AI Box home">
+        <img src="assets/images/logo.svg" alt="" width="34" height="34">
+        <span>AI Box</span>
+        <span class="brand-tag">Beta</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu"><span class="bar"></span></button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="data-deletion.html" aria-current="page">Data Deletion</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Data Deletion</p>
+        <h1>User Data Deletion Instructions</h1>
+        <p>You may request deletion of eligible data that AI Box collected through the Facebook, Instagram or WhatsApp Business accounts you connected. This page explains how to disconnect an account, how to submit a deletion request, and what happens next.</p>
+        <div class="meta-row">
+          <span class="meta-chip"><i data-lucide="calendar"></i>Last updated: {{LAST_UPDATED}}</span>
+          <span class="meta-chip"><i data-lucide="mail"></i>Requests: {{DELETION_EMAIL}}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container doc-layout">
+      <aside class="toc" aria-label="On this page">
+        <div class="toc-inner">
+          <h2>On this page</h2>
+          <ol>
+            <li><a href="#disconnect">Disconnect an account</a></li>
+            <li><a href="#request">Submit a deletion request</a></li>
+            <li><a href="#include">What to include</a></li>
+            <li><a href="#verify">How we verify ownership</a></li>
+            <li><a href="#scope">Data that may be deleted</a></li>
+            <li><a href="#process">How requests are processed</a></li>
+            <li><a href="#retained">Information we may need to keep</a></li>
+            <li><a href="#more">Privacy Policy and questions</a></li>
+          </ol>
+        </div>
+      </aside>
+
+      <article class="doc">
+        <!-- LAUNCH-BLOCKER: remove this whole callout ONLY when (1) {{DELETION_EMAIL}} is a real, monitored mailbox,
+             (2) a named person/team handles requests, and (3) the deletion steps below have been tested end-to-end. -->
+        <div class="callout callout-danger" data-launch-blocker>
+          <i data-lucide="octagon-alert"></i>
+          <div>
+            <span class="callout-title">Launch blocker — deletion process not yet confirmed operational</span>
+            <p>AI Box is in development. A monitored deletion-request mailbox and the internal deletion procedure described below have not yet been confirmed by the operator. This notice will be removed once requests can be received and fulfilled.</p>
+          </div>
+        </div>
+
+        <div class="callout callout-info">
+          <i data-lucide="shield-alert"></i>
+          <div>
+            <span class="callout-title">Never send passwords or access tokens</span>
+            <p>AI Box will never ask for your Facebook, Instagram or WhatsApp password, one-time codes, or access tokens. Do not include them in any request. If someone asks you for them claiming to be AI Box, do not respond.</p>
+          </div>
+        </div>
+
+        <section id="disconnect">
+          <h2><span class="num">1.</span>Disconnect an account from AI Box</h2>
+          <p>Disconnecting stops AI Box from retrieving any further data from that account. You can do this in either place:</p>
+          <ol class="steps">
+            <li>
+              <h3>In AI Box</h3>
+              <p>{{DISCONNECT_INSTRUCTIONS}}</p>
+              <!-- REVIEW-REQUIRED: describe the exact in-app path (e.g. Settings → Connected accounts → Disconnect), or replace with
+                   "In-app disconnection is not yet available; use the platform settings below." -->
+            </li>
+            <li>
+              <h3>In your Facebook, Instagram or Meta Business settings</h3>
+              <p>Open the settings for the account you connected, go to the section that lists business integrations or connected apps, find <strong>AI Box</strong> and remove it. Menu names may vary between platforms and over time.</p>
+            </li>
+          </ol>
+          <p>Disconnecting does not by itself delete data AI Box has already retrieved. To have that data deleted, submit a deletion request as described below.</p>
+        </section>
+
+        <section id="request">
+          <h2><span class="num">2.</span>Submit a deletion request</h2>
+          <p>Send an email to <a href="mailto:{{DELETION_EMAIL}}?subject=AI%20Box%20data%20deletion%20request"><strong>{{DELETION_EMAIL}}</strong></a> with the subject line <strong>“AI Box data deletion request”</strong>.</p>
+          <p>Please send the request from the email address associated with your AI Box account where possible. This helps us verify the request faster.</p>
+          <p class="email-template" aria-label="Example deletion request email">To: {{DELETION_EMAIL}}
+Subject: AI Box data deletion request
+
+Name: [your name]
+AI Box account email: [email you use with AI Box]
+Business name: [business, if applicable]
+Connected account(s): [e.g. Facebook Page name, Instagram @handle, WhatsApp Business account name]
+Request: Please delete the data AI Box collected through the account(s) above.
+[Optional] Also delete my AI Box account: yes / no</p>
+        </section>
+
+        <section id="include">
+          <h2><span class="num">3.</span>What to include in your request</h2>
+          <div class="grid grid-2">
+            <div class="card">
+              <h3>Please include</h3>
+              <ul class="checklist">
+                <li><i data-lucide="check"></i><span>Your full name</span></li>
+                <li><i data-lucide="check"></i><span>The email address used with AI Box</span></li>
+                <li><i data-lucide="check"></i><span>The business name, if applicable</span></li>
+                <li><i data-lucide="check"></i><span>Which connected account(s) the request covers — Page name, Instagram handle or WhatsApp Business account name</span></li>
+                <li><i data-lucide="check"></i><span>Whether you also want your AI Box account deleted</span></li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Do not include</h3>
+              <ul class="checklist no">
+                <li><i data-lucide="x"></i><span>Passwords for any account</span></li>
+                <li><i data-lucide="x"></i><span>Access tokens, API keys or app secrets</span></li>
+                <li><i data-lucide="x"></i><span>One-time login or verification codes</span></li>
+                <li><i data-lucide="x"></i><span>Payment card or bank details</span></li>
+                <li><i data-lucide="x"></i><span>Government ID documents, unless we specifically request them to resolve a dispute about ownership</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="verify">
+          <h2><span class="num">4.</span>How we verify account ownership</h2>
+          <p>Before deleting data, we need to make sure the request comes from someone entitled to make it. We may:</p>
+          <ul>
+            <li>check that the request was sent from the email address registered with your AI Box account, or reply to that address asking you to confirm the request;</li>
+            <li>ask you to confirm details about the connected account that the owner or an administrator would know, such as the Page or account name and approximate date it was connected;</li>
+            <li>where the request is about a business account, confirm that you are an owner or administrator of that business account.</li>
+          </ul>
+          <p>Verification will never require your password, one-time codes or access tokens. If we cannot verify a request, we will tell you and explain what else is needed.</p>
+        </section>
+
+        <section id="scope">
+          <h2><span class="num">5.</span>Data that may be deleted</h2>
+          <p>Eligible data collected through your connected accounts may include:</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th scope="col">Type of data</th><th scope="col">Examples</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Connection records and access tokens</td><td>The stored authorization AI Box uses to reach your account</td></tr>
+                <tr><td>Connected account details</td><td>Page, Instagram or WhatsApp Business account names, IDs and profile details</td></tr>
+                <tr><td>Retrieved analytics</td><td>Insights, engagement metrics and messaging analytics retrieved from the account</td></tr>
+                <tr><td>Generated reports</td><td>AI-generated reports and summaries based on that account's data</td></tr>
+                <tr><td>AI Box account information</td><td>Your name, email and settings — if you ask for your AI Box account to be deleted too</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Deleting data from AI Box does not delete anything from Facebook, Instagram or WhatsApp themselves. Data on those platforms is managed through their own settings.</p>
+        </section>
+
+        <section id="process">
+          <h2><span class="num">6.</span>How requests are processed</h2>
+          <ol class="steps">
+            <li>
+              <h3>We acknowledge your request</h3>
+              <p>We reply to confirm we have received it, using the email address you wrote from.</p>
+            </li>
+            <li>
+              <h3>We verify the request</h3>
+              <p>We confirm you are entitled to make the request, as described in section 4.</p>
+            </li>
+            <li>
+              <h3>We revoke access and delete eligible data</h3>
+              <p>We disconnect the relevant accounts and delete the eligible data from AI Box systems, including data held for us by our service providers.</p>
+            </li>
+            <li>
+              <h3>We confirm completion</h3>
+              <p>We email you to confirm what was deleted and note anything we were required to keep, with the reason.</p>
+            </li>
+          </ol>
+          <p>We aim to complete verified requests within {{DELETION_RESPONSE_TIME}}. If we need more time, we will let you know why.</p>
+          <!-- REVIEW-REQUIRED: set a response time you can actually meet, and check it against applicable law. -->
+        </section>
+
+        <section id="retained">
+          <h2><span class="num">7.</span>Information we may need to keep</h2>
+          <p>Where applicable law requires us to, we may retain limited information after a deletion request — for example, records needed to meet legal, tax or accounting obligations, to resolve disputes, or a record that a deletion request was received and completed. Any retained information is kept only for as long as that requirement applies and is not used to provide AI Box features.</p>
+          <!-- REVIEW-REQUIRED: confirm whether any such legal retention obligations actually apply to AI Box. -->
+        </section>
+
+        <section id="more">
+          <h2><span class="num">8.</span>Privacy Policy and questions</h2>
+          <p>For more about what AI Box collects and how it is used, read our <a href="privacy-policy.html">Privacy Policy</a>. For other questions, see the <a href="contact.html">Contact page</a>.</p>
+          <p>
+            <a class="btn btn-primary" href="mailto:{{DELETION_EMAIL}}?subject=AI%20Box%20data%20deletion%20request"><i data-lucide="mail"></i>Email a deletion request</a>
+            <a class="btn btn-outline" href="privacy-policy.html"><i data-lucide="shield-check"></i>Privacy Policy</a>
+          </p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html" aria-label="AI Box home">
+            <img src="assets/images/logo.svg" alt="" width="34" height="34">
+            <span>AI Box</span>
+          </a>
+          <p>AI-powered business reporting from authorized, connected data sources. Currently in development.</p>
+          <p>Operated by {{OPERATOR_LEGAL_NAME}}</p>
+        </div>
+        <nav aria-label="Legal">
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="data-deletion.html" aria-current="page">Data Deletion</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Support">
+          <h2>Support</h2>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> {{OPERATOR_LEGAL_NAME}}. All rights reserved.</p>
+        <p>Facebook, Instagram and WhatsApp are trademarks of Meta Platforms, Inc. AI Box is an independent application and is not affiliated with, endorsed by or sponsored by Meta.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
